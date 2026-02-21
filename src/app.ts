@@ -66,10 +66,6 @@ await bot.api.sendMessageToChat(chatID, message2)
 await bot.api.sendMessageToChat(chatID, "тест отравки файла", {attachments: [file.toJson()]})
 await bot.api.sendMessageToChat(chatID, "тест отправки фото", {attachments: [image.toJson()]})
 
-// Итого:
-// - чтобы бот мог отправлять сообщения в группу, его нужно добавить в эту группу
-// - чтобы бот мог отправлять сообщения пользователю, нужно чтобы пользователь открыл чат с ботом (?)
-
 
 bot.start();
 
