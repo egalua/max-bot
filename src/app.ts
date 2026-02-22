@@ -7,7 +7,7 @@ if(process.env.CHAT_ID === undefined || process.env.USER_ID === null || process.
 const botToken = process.env.BOT_TOKEN ?? ""
 const userID = parseInt(process.env.USER_ID)
 const chatID = parseInt(process.env.CHAT_ID )
-const fotoSrc = './test_data/photo_2026-02-05_12-21-01.jpg'
+const photoPath = './test_data/photo_2026-02-05_12-21-01.jpg'
 const message1 = `Новый Кедровый
 14.02 
 Заявки: 2
@@ -53,8 +53,8 @@ const message2 = `(+) Устранено
 Юдин Александр`
 const bot = new Bot(botToken);
 
-const file = await bot.api.uploadFile({source: fotoSrc})
-const image = await bot.api.uploadImage({source: fotoSrc})
+const file = await bot.api.uploadFile({source: photoPath})
+const image = await bot.api.uploadImage({source: photoPath})
 
 await bot.api.sendMessageToUser(userID, message1)
 await bot.api.sendMessageToUser(userID, message2)
