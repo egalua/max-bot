@@ -67,6 +67,6 @@ await bot.api.sendMessageToChat(chatID, "тест отравки файла", {a
 await bot.api.sendMessageToChat(chatID, "тест отправки фото", {attachments: [image.toJson()]})
 
 
-bot.start();
+// bot.start();
 
 
