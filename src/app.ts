@@ -2,7 +2,7 @@ import 'dotenv/config'
 import { Bot } from '@maxhub/max-bot-api';
 
 if(process.env.USER_ID === undefined || process.env.USER_ID === null || process.env.USER_ID === "") throw new Error("Некорректное значение USER_ID")
-if(process.env.CHAT_ID === undefined || process.env.USER_ID === null || process.env.USER_ID === "") throw new Error("Некорректное значение CHAT_ID")
+if(process.env.CHAT_ID === undefined || process.env.CHAT_ID === null || process.env.CHAT_ID === "") throw new Error("Некорректное значение CHAT_ID")
 
 const botToken = process.env.BOT_TOKEN ?? ""
 const userID = parseInt(process.env.USER_ID)
