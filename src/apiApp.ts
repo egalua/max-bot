@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import { MaxBotExaple } from "./max-bot.js"
+import { MaxBotExample } from "./max-bot.js"
 
 if(process.env.USER_ID === undefined || process.env.USER_ID === null || process.env.USER_ID === "") throw new Error("Некорректное значение USER_ID")
 if(process.env.CHAT_ID === undefined || process.env.CHAT_ID === null || process.env.CHAT_ID === "") throw new Error("Некорректное значение CHAT_ID")
@@ -57,7 +57,7 @@ const message2 = `(+) Устранено
 
 // ---------------------------------------------------------------------
 
-const maxBot = new MaxBotExaple(botToken)
+const maxBot = new MaxBotExample(botToken)
 
 const imageAtachment = await maxBot.uploadFile(photoPath, "image")
 const fileAtachment = await maxBot.uploadFile(photoPath, "file")

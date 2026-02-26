@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 interface UploadUrl { url: string }
 type uploadType = "file" | "image"
 
-export class MaxBotExaple{
+export class MaxBotExample{
   DEFAULT_TIMEOUT: number;
   baseURL: string;  
   uploadPath: string;
